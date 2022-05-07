@@ -11,7 +11,14 @@ public class EntryFavoriteEntityConfiguration : BaseEntityConfiguration<EntryFav
     {
         base.Configure(builder);
         builder.ToTable("entryfavorite", SozlukContext.DEFAULT_SCHEMA);
-        builder.HasOne(i => i.Entry).WithMany(i => i.EntryFavorites).HasForeignKey(i => i.EntryId);
-        builder.HasOne(i => i.CreatedUser).WithMany(i => i.EntryFavorites).HasForeignKey(i => i.CreatedById);
+        builder.HasOne(i => i.Entry)
+            .WithMany(i => i.EntryFavorites)
+            .HasForeignKey(i => i.EntryId)
+            .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasOne(i => i.CreatedUser)
+            .WithMany(i => i.EntryFavorites)
+            .HasForeignKey(i => i.CreatedById)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }

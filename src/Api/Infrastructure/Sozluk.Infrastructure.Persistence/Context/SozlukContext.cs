@@ -8,6 +8,10 @@ public class SozlukContext : DbContext
 {
     public const string DEFAULT_SCHEMA = "dbo";
 
+    public SozlukContext()
+    {
+        
+    }
     public SozlukContext(DbContextOptions options) : base(options)
     {
     }
@@ -19,6 +23,17 @@ public class SozlukContext : DbContext
     public DbSet<EntryFavorite> EntryFavorites { get; set; }
     public DbSet<EmailConfirmation> EmailConfirmations { get; set; }
     public DbSet<EntryCommentVote> EntryCommentVotes { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=sozlukdb;User=sa;Password=Tekno-900*!", opt =>
+            {
+                opt.EnableRetryOnFailure();
+            });
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
