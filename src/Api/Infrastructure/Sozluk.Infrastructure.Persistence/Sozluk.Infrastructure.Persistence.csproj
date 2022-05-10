@@ -15,9 +15,11 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Core\Sozluk.Api.Application\Sozluk.Api.Application.csproj" />
       <ProjectReference Include="..\..\Core\Sozluk.Api.Domain\Sozluk.Api.Domain.csproj" />
     </ItemGroup>
 

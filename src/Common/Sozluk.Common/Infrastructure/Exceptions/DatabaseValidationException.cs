@@ -1,0 +1,22 @@
+﻿using System.Runtime.Serialization;
+
+namespace Sozluk.Common.Infrastructure.Exceptions;
+
+public class DatabaseValidationException:Exception
+{
+    public DatabaseValidationException()
+    {
+    }
+
+    protected DatabaseValidationException(SerializationInfo info, StreamingContext context) : base(info, context)
+    {
+    }
+
+    public DatabaseValidationException(string? message) : base(message)
+    {
+    }
+
+    public DatabaseValidationException(string? message, Exception? innerException) : base(message, innerException)
+    {
+    }
+}

@@ -11,11 +11,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SeedData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/PasswordEncrytor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEmailConfirmationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEntryCommentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEntryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IGenericRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EmailConfirmationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EntryCommentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EntryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/GenericRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Exceptions/DatabaseValidationException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/LoginUserViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/LoginUserCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/ViewModels/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Enums.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +54,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4ed796081acfa4cefed1c41947519a48feaf6375183bfb6abe1618b88241/SqlServerDbContextOptionsBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/639b35ef8b43554f27e35d214d41a2d043dd9a95397bc0d747825acadaad3518/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/15d04b42e5c017a5cc8808226deed6113d2228493c877f598fcca495b229c3/DbContextOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5fa080365df4696c155bb06d6a2739f49bb8b6ffcb159b86101ddad2f2693b4/Faker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Projects/angular/angular-sozluk/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SozlukContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a2486b5e044b68e08e1cf9c5b9aa7af81ef4da37de0a0551f713f5374ace/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f4/192f3915/AutoRegisterData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/745e5db5ac341a742a5cb379adf744cd2515e198b8209475e115737c93a7/ILocaleAware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18f9aab6fabc434588b218664646ce70200ba8/44/0941ae91/IEntityTypeConfiguration`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8383eafdb3fcfdc3625b4caef3730d5769bb177bac72360812c9f5bb4a78/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5fa080365df4696c155bb06d6a2739f49bb8b6ffcb159b86101ddad2f2693b4/Faker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f9/16771bfd/AutoRegisterHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/538811d0fba15c61b743814ea8b7193d48cfbb84a1a53c5db2512b1b329330/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -183,7 +208,8 @@
       <workItem from="1651213046809" duration="5626000" />
       <workItem from="1651728432131" duration="5448000" />
       <workItem from="1651915063413" duration="390000" />
-      <workItem from="1651918416807" duration="4077000" />
+      <workItem from="1651918416807" duration="16981000" />
+      <workItem from="1652181450416" duration="5966000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -206,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651920228090</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added seeding data">
+      <created>1651923414158</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651923414158</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,36 +264,24 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added Entity Configuration" />
     <MESSAGE value="Added migration and update database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added migration and update database" />
+    <MESSAGE value="Added seeding data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added seeding data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs</url>
-          <line>18</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Infrastructure\Sozluk.Infrastructure.Persistence\Extensions\Registration.cs" initialLine="18" containingFunctionPresentation="method 'AddInfrastructureRegistration'">
+          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\User\LoginUserCommandHandler.cs" initialLine="29" containingFunctionPresentation="method 'Handle'">
             <startOffsets>
-              <option value="656" />
+              <option value="1069" />
             </startOffsets>
             <endOffsets>
-              <option value="686" />
+              <option value="1070" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs</url>
-          <line>15</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Infrastructure\Sozluk.Infrastructure.Persistence\Extensions\Registration.cs" initialLine="15" containingFunctionPresentation="lambda expression inside method 'AddInfrastructureRegistration'">
-            <startOffsets>
-              <option value="592" />
-            </startOffsets>
-            <endOffsets>
-              <option value="619" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
