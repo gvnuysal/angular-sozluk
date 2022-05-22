@@ -11,31 +11,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEmailConfirmationRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEntryCommentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IEntryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IGenericRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Interfaces/Repositories/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EmailConfirmationRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EntryCommentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/EntryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/GenericRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Repositories/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Exceptions/DatabaseValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/LoginUserViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/LoginUserCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/33df16cd-2e67-41d3-8552-3c59edeef0a4.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/88a75e0f-cef0-4a38-a249-1162789a8ca4.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/read.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/v17/.futdcache.v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Update/UpdateUserCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522114732_Added_CommentCount.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522114732_Added_CommentCount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522121023_Removed_EntryComment_Count.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522121023_Removed_EntryComment_Count.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/User/UserEmailChangedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/CreateUserCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/UpdateUserCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Login/LoginUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Login/LoginUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryCommentFavorite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryCommentFavorite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SozlukContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SozlukContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507102144_Added_Initial.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507102144_Added_Initial.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104009_Added_EntryComment_Vote.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104009_Added_EntryComment_Vote.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104107_Added_DeleteBehaveiour.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104107_Added_DeleteBehaveiour.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/SozlukContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/SozlukContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/ViewModels/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Enums.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +58,45 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="DisabledMethodsStorage">
+    <option name="disabledMethods">
+      <set>
+        <option value="System.Linq : System.Linq.SystemCore_EnumerableDebugView&lt;T&gt; : get_Items ()" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4ed796081acfa4cefed1c41947519a48feaf6375183bfb6abe1618b88241/SqlServerDbContextOptionsBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/639b35ef8b43554f27e35d214d41a2d043dd9a95397bc0d747825acadaad3518/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/15d04b42e5c017a5cc8808226deed6113d2228493c877f598fcca495b229c3/DbContextOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a2486b5e044b68e08e1cf9c5b9aa7af81ef4da37de0a0551f713f5374ace/Exception.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f4/192f3915/AutoRegisterData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/745e5db5ac341a742a5cb379adf744cd2515e198b8209475e115737c93a7/ILocaleAware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18f9aab6fabc434588b218664646ce70200ba8/44/0941ae91/IEntityTypeConfiguration`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8383eafdb3fcfdc3625b4caef3730d5769bb177bac72360812c9f5bb4a78/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5fa080365df4696c155bb06d6a2739f49bb8b6ffcb159b86101ddad2f2693b4/Faker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f4/192f3915/AutoRegisterData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f9/16771bfd/AutoRegisterHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73ec22dbca994094a87704b22a707f981a00/08/6d29c49e/IRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73ec22dbca994094a87704b22a707f981a00/fe/c0b5c44d/IBaseRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/15d04b42e5c017a5cc8808226deed6113d2228493c877f598fcca495b229c3/DbContextOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/538811d0fba15c61b743814ea8b7193d48cfbb84a1a53c5db2512b1b329330/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5fa080365df4696c155bb06d6a2739f49bb8b6ffcb159b86101ddad2f2693b4/Faker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/639b35ef8b43554f27e35d214d41a2d043dd9a95397bc0d747825acadaad3518/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74593cffda1e21b56a94f6f59cddd42c17913e780fbd31c3cd6f1d9455b59f4/IRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/745e5db5ac341a742a5cb379adf744cd2515e198b8209475e115737c93a7/ILocaleAware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a2486b5e044b68e08e1cf9c5b9aa7af81ef4da37de0a0551f713f5374ace/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4ed796081acfa4cefed1c41947519a48feaf6375183bfb6abe1618b88241/SqlServerDbContextOptionsBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8383eafdb3fcfdc3625b4caef3730d5769bb177bac72360812c9f5bb4a78/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,15 +107,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sozluk.Api.WebApi">
     <configuration name="Sozluk.Api.WebApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" />
@@ -209,7 +236,14 @@
       <workItem from="1651728432131" duration="5448000" />
       <workItem from="1651915063413" duration="390000" />
       <workItem from="1651918416807" duration="16981000" />
-      <workItem from="1652181450416" duration="5966000" />
+      <workItem from="1652181450416" duration="8064000" />
+      <workItem from="1652433177597" duration="2245000" />
+      <workItem from="1652679031195" duration="1808000" />
+      <workItem from="1653215436716" duration="527000" />
+      <workItem from="1653216101231" duration="3064000" />
+      <workItem from="1653221593005" duration="671000" />
+      <workItem from="1653222610202" duration="114000" />
+      <workItem from="1653223307671" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -239,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651923414158</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user login operation">
+      <created>1652202300998</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652202300998</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,23 +306,63 @@
     <MESSAGE value="Added Entity Configuration" />
     <MESSAGE value="Added migration and update database" />
     <MESSAGE value="Added seeding data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added seeding data" />
+    <MESSAGE value="user login operation" />
+    <option name="LAST_COMMIT_MESSAGE" value="user login operation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\User\LoginUserCommandHandler.cs" initialLine="29" containingFunctionPresentation="method 'Handle'">
+          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\User\Create\CreateUserCommandHandler.cs" initialLine="23" containingFunctionPresentation="method 'Handle'">
             <startOffsets>
-              <option value="1069" />
+              <option value="779" />
             </startOffsets>
             <endOffsets>
-              <option value="1070" />
+              <option value="780" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="24" containingFunctionPresentation="method 'CreateBasicConsumer'">
+            <startOffsets>
+              <option value="849" />
+            </startOffsets>
+            <endOffsets>
+              <option value="850" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="34" containingFunctionPresentation="method 'EnsureExchange'">
+            <startOffsets>
+              <option value="1287" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1288" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="42" containingFunctionPresentation="method 'EnsureQueue'">
+            <startOffsets>
+              <option value="1544" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1545" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

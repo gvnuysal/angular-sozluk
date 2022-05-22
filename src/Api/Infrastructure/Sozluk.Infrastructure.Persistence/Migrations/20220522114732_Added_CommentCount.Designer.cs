@@ -12,17 +12,17 @@ using Sozluk.Infrastructure.Persistence.Context;
 namespace Sozluk.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(SozlukContext))]
-    [Migration("20220507104107_Added_DeleteBehaveiour")]
-    partial class Added_DeleteBehaveiour
+    [Migration("20220522114732_Added_CommentCount")]
+    partial class Added_CommentCount
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.4")
+                .HasAnnotation("ProductVersion", "6.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("Sozluk.Api.Domain.Models.EmailConfirmation", b =>
                 {
@@ -116,6 +116,9 @@ namespace Sozluk.Infrastructure.Persistence.Migrations
 
                     b.Property<Guid>("CreatedById")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("EntryCommentCount")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("EntryCommentId")
                         .HasColumnType("uniqueidentifier");

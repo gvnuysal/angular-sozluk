@@ -7,22 +7,19 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sozluk.Infrastructure.Persistence.Context;
 
-#nullable disable
-
 namespace Sozluk.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(SozlukContext))]
-    [Migration("20220507104107_Added_DeleteBehaveiour")]
-    partial class Added_DeleteBehaveiour
+    [Migration("20220522121023_Removed_EntryComment_Count")]
+    partial class Removed_EntryComment_Count
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.4")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1, 1);
+                .UseIdentityColumns()
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("ProductVersion", "5.0.0");
 
             modelBuilder.Entity("Sozluk.Api.Domain.Models.EmailConfirmation", b =>
                 {
@@ -196,7 +193,7 @@ namespace Sozluk.Infrastructure.Persistence.Migrations
                     b.Property<Guid>("EntryId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("EntryId1")
+                    b.Property<Guid?>("EntryId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("VoteType")
@@ -338,9 +335,7 @@ namespace Sozluk.Infrastructure.Persistence.Migrations
 
                     b.HasOne("Sozluk.Api.Domain.Models.Entry", "Entry")
                         .WithMany()
-                        .HasForeignKey("EntryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EntryId1");
 
                     b.Navigation("Entry");
                 });

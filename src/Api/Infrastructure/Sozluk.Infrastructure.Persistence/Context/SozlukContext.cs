@@ -28,7 +28,7 @@ public class SozlukContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=sozlukdb;User=sa;Password=Tekno-900*!", opt =>
+            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=sozlukdb;User=sa;Password=Tekno-900*!;", opt =>
             {
                 opt.EnableRetryOnFailure();
             });

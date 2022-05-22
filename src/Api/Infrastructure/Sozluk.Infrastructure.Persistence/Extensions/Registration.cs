@@ -19,8 +19,8 @@ public static class Registration
             });
         });
         var seedData = new SeedData();
-        seedData.SeedAsync(configuration).GetAwaiter().GetResult();
-        //services.AddTransient(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+        seedData.SeedAsync(configuration).GetAwaiter().GetResult(); 
+        
         services.AddTransient<IUserRepository, UserRepository>();
         services.AddTransient<IEntryRepository, EntryRepository>();
         services.AddTransient<IEntryCommentRepository, EntryCommentRepository>();
