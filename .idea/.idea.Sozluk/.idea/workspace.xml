@@ -11,42 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/33df16cd-2e67-41d3-8552-3c59edeef0a4.vsidx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/88a75e0f-cef0-4a38-a249-1162789a8ca4.vsidx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/read.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/Sozluk/v17/.futdcache.v1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Update/UpdateUserCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522114732_Added_CommentCount.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522114732_Added_CommentCount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522121023_Removed_EntryComment_Count.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220522121023_Removed_EntryComment_Count.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/User/UserEmailChangedEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/CreateUserCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/UpdateUserCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/Create/CreateEntryCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/CreateFav/CreateEntryFavCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/EntryComment/CreateEntryCommentFavEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/User/ChangeUserPasswordCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Login/LoginUserCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/LoginUserCommandValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Login/LoginUserCommandValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/88a75e0f-cef0-4a38-a249-1162789a8ca4.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryCommentFavorite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryCommentFavorite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SozlukContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Context/SozlukContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Extensions/Registration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507102144_Added_Initial.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507102144_Added_Initial.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104009_Added_EntryComment_Vote.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104009_Added_EntryComment_Vote.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104107_Added_DeleteBehaveiour.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/20220507104107_Added_DeleteBehaveiour.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/SozlukContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Migrations/SozlukContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Infrastructure/Sozluk.Infrastructure.Persistence/Sozluk.Infrastructure.Persistence.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +90,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49632353&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -243,7 +227,10 @@
       <workItem from="1653216101231" duration="3064000" />
       <workItem from="1653221593005" duration="671000" />
       <workItem from="1653222610202" duration="114000" />
-      <workItem from="1653223307671" duration="1577000" />
+      <workItem from="1653223307671" duration="3100000" />
+      <workItem from="1653661935012" duration="1051000" />
+      <workItem from="1654006649297" duration="696000" />
+      <workItem from="1654024553668" duration="6594000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -280,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652202300998</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added rabbitmq">
+      <created>1653225837567</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653225837567</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,62 +301,24 @@
     <MESSAGE value="Added migration and update database" />
     <MESSAGE value="Added seeding data" />
     <MESSAGE value="user login operation" />
-    <option name="LAST_COMMIT_MESSAGE" value="user login operation" />
+    <MESSAGE value="Added rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rabbitmq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\User\Create\CreateUserCommandHandler.cs" initialLine="23" containingFunctionPresentation="method 'Handle'">
+          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs</url>
+          <line>10</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\EntryComment\CreateFav\CreateEntryCommentFavCommandHandler.cs" initialLine="10" containingFunctionPresentation="method 'Handle'">
             <startOffsets>
-              <option value="779" />
+              <option value="408" />
             </startOffsets>
             <endOffsets>
-              <option value="780" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="24" containingFunctionPresentation="method 'CreateBasicConsumer'">
-            <startOffsets>
-              <option value="849" />
-            </startOffsets>
-            <endOffsets>
-              <option value="850" />
+              <option value="409" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="34" containingFunctionPresentation="method 'EnsureExchange'">
-            <startOffsets>
-              <option value="1287" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1288" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs</url>
-          <line>42</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Common\Sozluk.Common\Infrastructure\QueryFactory.cs" initialLine="42" containingFunctionPresentation="method 'EnsureQueue'">
-            <startOffsets>
-              <option value="1544" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1545" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
