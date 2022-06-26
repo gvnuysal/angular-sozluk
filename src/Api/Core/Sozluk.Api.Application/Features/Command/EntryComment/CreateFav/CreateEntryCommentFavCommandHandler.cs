@@ -9,8 +9,10 @@ public class CreateEntryCommentFavCommandHandler : IRequestHandler<CreateEntryCo
 {
     public async Task<bool> Handle(CreateEntryCommentFavCommand request, CancellationToken cancellationToken)
     {
-        QueryFactory.SendMessageToExchange(exchangeName: SozlukConstants.FavExchangeName, exchangeType: SozlukConstants.DefaultExchangeType,
-            queueName: SozlukConstants.CreateEntryCommentFavQueueName, obj: new CreateEntryCommentFavEvent()
+        QueueFactory.SendMessageToExchange(exchangeName: SozlukConstants.FavExchangeName,
+            exchangeType: SozlukConstants.DefaultExchangeType,
+            queueName: SozlukConstants.CreateEntryCommentFavQueueName, 
+            obj: new CreateEntryCommentFavEvent()
             {
                 CreatedBy = request.UserId,
                 EntryCommentId = request.EntryCommentId

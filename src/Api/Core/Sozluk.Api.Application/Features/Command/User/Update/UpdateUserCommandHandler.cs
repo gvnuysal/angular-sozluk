@@ -42,7 +42,7 @@ public class UpdateUserCommandHandler:IRequestHandler<UpdateUserCommand,bool>
                 NewEmailAddress = request.EmailAddress
             };
 
-            QueryFactory.SendMessageToExchange(SozlukConstants.UserExchangeName, SozlukConstants.DefaultExchangeType,
+            QueueFactory.SendMessageToExchange(SozlukConstants.UserExchangeName, SozlukConstants.DefaultExchangeType,
                 SozlukConstants.UserEmailChangedQueueName, @event);
             dbUser.EmailConfirmed = false;
             await _userRepository.UpdateAsync(dbUser);

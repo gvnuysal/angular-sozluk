@@ -11,22 +11,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/Create/CreateEntryCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/CreateFav/CreateEntryFavCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/EntryComment/CreateEntryCommentFavEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/User/ChangeUserPasswordCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/CreateFav/CreateEntryFavCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/CreateVote/CreateEntryVoteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/DeleteFav/DeleteEntryFavCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/DeleteFav/DeleteEntryFavCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/DeleteVote/DeleteEntryVoteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/DeleteVote/DeleteVoteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/Create/CreateEntryCommentCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateVote/CreateEntryCommentVoteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/DeleteFav/DeleteEntryCommentFavCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/DeleteFav/DeleteEntryCommentFavCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/DeleteVote/DeleteEntryCommentVoteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/DeleteVote/DeleteEntryCommentVoteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/Entry/CreateEntryFavEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/Entry/CreateEntryVoteEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/Entry/DeleteEntryFavEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/Entry/DeleteVoteEntryEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/EntryComment/CreateEntryCommentVoteEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Events/EntryComment/DeleteEntryCommentFavEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryCommentCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryCommentVoteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryVoteCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.metadata.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sozluk.projects.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Sozluk/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Sozluk/FileContentIndex/88a75e0f-cef0-4a38-a249-1162789a8ca4.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Extensions/Registration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Sozluk/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Sozluk/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Create/CreateUserCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Update/UpdateUserCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/Update/UpdateUserCommandHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/QueryFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/SozlukConstants.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,6 +249,9 @@
       <workItem from="1653661935012" duration="1051000" />
       <workItem from="1654006649297" duration="696000" />
       <workItem from="1654024553668" duration="6594000" />
+      <workItem from="1654171356370" duration="2587000" />
+      <workItem from="1654677934390" duration="1763000" />
+      <workItem from="1656240954940" duration="7098000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -274,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653225837567</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added CreateEntryFavCommand">
+      <created>1654171371283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654171371283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,25 +330,7 @@
     <MESSAGE value="Added seeding data" />
     <MESSAGE value="user login operation" />
     <MESSAGE value="Added rabbitmq" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rabbitmq" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/EntryComment/CreateFav/CreateEntryCommentFavCommandHandler.cs</url>
-          <line>10</line>
-          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Command\EntryComment\CreateFav\CreateEntryCommentFavCommandHandler.cs" initialLine="10" containingFunctionPresentation="method 'Handle'">
-            <startOffsets>
-              <option value="408" />
-            </startOffsets>
-            <endOffsets>
-              <option value="409" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added CreateEntryFavCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CreateEntryFavCommand" />
   </component>
 </project>

@@ -7,6 +7,10 @@ public class CreateEntryCommentFavCommand : IRequest<bool>
     public Guid EntryCommentId { get; set; }
     public Guid UserId { get; set; }
 
+    public CreateEntryCommentFavCommand()
+    {
+        
+    }
     public CreateEntryCommentFavCommand(Guid entryCommentId, Guid userId)
     {
         EntryCommentId = entryCommentId;

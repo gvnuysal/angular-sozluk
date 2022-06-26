@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 
 namespace Sozluk.Common.Infrastructure;
 
-public static class QueryFactory
+public static class QueueFactory
 {
     /// <summary>
     /// 

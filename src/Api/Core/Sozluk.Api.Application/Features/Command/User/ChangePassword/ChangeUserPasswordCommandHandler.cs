@@ -6,7 +6,7 @@ using Sozluk.Common.Infrastructure.Exceptions;
 
 namespace Sozluk.Api.Application.Features.Command.User.ChangePassword;
 
-public class ChangeUserPasswordCommandHandler:IRequestHandler<ChangeUserPasswordCommand,bool>
+public class ChangeUserPasswordCommandHandler : IRequestHandler<ChangeUserPasswordCommand, bool>
 {
     private readonly IUserRepository _userRepository;
 
@@ -19,23 +19,23 @@ public class ChangeUserPasswordCommandHandler:IRequestHandler<ChangeUserPassword
     {
         if (!request.UserId.HasValue)
             throw new ArgumentNullException(nameof(request.UserId));
-        
-            var dbUser = await _userRepository.GetByIdAsync(request.UserId.Value);
-            
-            if (dbUser is null)
-            {
-                throw new DatabaseValidationException("User Not Found");
-            }
 
-            var encryptedPassword = PasswordEncrytor.Encrpt(request.OldPassword);
-            if (dbUser.Password != encryptedPassword)
-            {
-                throw new DatabaseValidationException("Old password wrong");
-            }
+        var dbUser = await _userRepository.GetByIdAsync(request.UserId.Value);
 
-            dbUser.Password = encryptedPassword;
-            await _userRepository.UpdateAsync(dbUser);
+        if (dbUser is null)
+        {
+            throw new DatabaseValidationException("User Not Found");
+        }
 
-            return true;
+        var encryptedPassword = PasswordEncrytor.Encrpt(request.OldPassword);
+        if (dbUser.Password != encryptedPassword)
+        {
+            throw new DatabaseValidationException("Old password wrong");
+        }
+
+        dbUser.Password = encryptedPassword;
+        await _userRepository.UpdateAsync(dbUser);
+
+        return true;
     }
 }

@@ -38,7 +38,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
                 NewEmailAddress = request.EmailAddress
             };
 
-            QueryFactory.SendMessageToExchange(SozlukConstants.UserExchangeName, SozlukConstants.DefaultExchangeType,
+            QueueFactory.SendMessageToExchange(SozlukConstants.UserExchangeName, SozlukConstants.DefaultExchangeType,
                 SozlukConstants.UserEmailChangedQueueName, @event);
         }
          
