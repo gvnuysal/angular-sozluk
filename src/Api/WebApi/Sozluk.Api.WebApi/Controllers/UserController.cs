@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Sozluk.Api.Application.Features.Command.User.ConfirmEmail;
+using Sozluk.Common.Events.User;
 using Sozluk.Common.ViewModels.RequestModels;
 
 namespace Sozluk.Api.WebApi.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+{ 
+    public class UserController : BaseController
     {
         private readonly IMediator _mediator;
 
@@ -22,7 +22,7 @@ namespace Sozluk.Api.WebApi.Controllers
 
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> Login([FromBody]LoginUserCommand command)
+        public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
         {
             var res = await _mediator.Send(command);
             return Ok(res);
@@ -40,6 +40,25 @@ namespace Sozluk.Api.WebApi.Controllers
         public async Task<IActionResult> UpdateUser([FromBody] UpdateUserCommand command)
         {
             var ok = await _mediator.Send(command);
+            return Ok(ok);
+        }
+
+        [HttpPost]
+        [Route("confirm-email")]
+        public async Task<IActionResult> ConfirmEmail(Guid id)
+        {
+            var ok = await _mediator.Send(new ConfirmEmailCommand { ConfirmationId = id });
+            return Ok(ok);
+        }
+        [HttpPost]
+        [Route("change-password")]
+        public async Task<IActionResult> ConfirmEmail([FromBody] ChangeUserPasswordCommand changeUserPasswordCommand)
+        {
+            if (!changeUserPasswordCommand.UserId.HasValue)
+            {
+                changeUserPasswordCommand.UserId = UserId;
+            }
+            var ok = await _mediator.Send(changeUserPasswordCommand);
             return Ok(ok);
         }
     }
