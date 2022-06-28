@@ -6,5 +6,5 @@ public class Page
     public int PageSize { get; set; }
     public int TotalRowCount { get; set; }
     public int TotalPageCount => (int)Math.Ceiling((double)TotalRowCount / PageSize);
-    public int Skip=>
+    public int Skip { get; set; }
 }
