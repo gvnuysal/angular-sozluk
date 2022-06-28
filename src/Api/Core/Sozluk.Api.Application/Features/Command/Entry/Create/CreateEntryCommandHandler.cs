@@ -16,6 +16,12 @@ public class CreateEntryCommandHandler:IRequestHandler<CreateEntryCommand,Guid>
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     public async Task<Guid> Handle(CreateEntryCommand request, CancellationToken cancellationToken)
     {
         var dbEntry = _mapper.Map<Domain.Models.Entry>(request);

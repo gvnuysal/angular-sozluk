@@ -33,7 +33,7 @@ public class ChangeUserPasswordCommandHandler : IRequestHandler<ChangeUserPasswo
             throw new DatabaseValidationException("Old password wrong");
         }
 
-        dbUser.Password = encryptedPassword;
+        dbUser.Password =  PasswordEncrytor.Encrpt(request.NewPassword);;
         await _userRepository.UpdateAsync(dbUser);
 
         return true;

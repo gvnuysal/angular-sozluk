@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Sozluk.Api.Application.Features.Queries.GetEntries;
 using Sozluk.Common.ViewModels.RequestModels.Entry;
 
 namespace Sozluk.Api.WebApi.Controllers
@@ -18,6 +19,13 @@ namespace Sozluk.Api.WebApi.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetEntries([FromQuery]GetEntriesQuery query)
+        {
+            var entries = await _mediator.Send(query);
+
+            return Ok(entries);
+        }
         [HttpPost]
         [Route("create-entry")]
         public async Task<IActionResult> CreateEntry([FromBody] CreateEntryCommand entryCommand)
