@@ -11,16 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/Page.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/GetEntriesViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/Create/CreateEntryCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/Entry/Create/CreateEntryCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Command/User/ChangePassword/ChangeUserPasswordCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Mapping/MappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Sozluk.Api.Application.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/Page.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/Page.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +46,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18f9aab6fabc434588b218664646ce70200ba8/44/0941ae91/IEntityTypeConfiguration`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/511d4e206dae4ca0be58667fba28e4533de00/de/5a1f21fd/IMapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f4/192f3915/AutoRegisterData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f9/16771bfd/AutoRegisterHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73ec22dbca994094a87704b22a707f981a00/08/6d29c49e/IRequest`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -64,9 +59,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/639b35ef8b43554f27e35d214d41a2d043dd9a95397bc0d747825acadaad3518/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74593cffda1e21b56a94f6f59cddd42c17913e780fbd31c3cd6f1d9455b59f4/IRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/745e5db5ac341a742a5cb379adf744cd2515e198b8209475e115737c93a7/ILocaleAware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7e584c6425e49b4ecbb37645d90d799522422596e708598fcf881c111f8d1/Math.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a2486b5e044b68e08e1cf9c5b9aa7af81ef4da37de0a0551f713f5374ace/Exception.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4ed796081acfa4cefed1c41947519a48feaf6375183bfb6abe1618b88241/SqlServerDbContextOptionsBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a683b4d0bbcb4c3e98a3c7cffd352553a23690/_bc21e/IntrinsicAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,7 +83,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.49632353&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5895522&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -237,7 +234,8 @@
       <workItem from="1654171356370" duration="2587000" />
       <workItem from="1654677934390" duration="1763000" />
       <workItem from="1656240954940" duration="9835000" />
-      <workItem from="1656455729849" duration="2925000" />
+      <workItem from="1656455729849" duration="3135000" />
+      <workItem from="1656504503131" duration="3721000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -309,7 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656274815328</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added pagination">
+      <created>1656458853368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656458853368</updated>
+    </task>
+    <task id="LOCAL-00012" summary="paignation modify">
+      <created>1656458886448</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656458886448</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +353,8 @@
     <MESSAGE value="Added Entry Vote,Fav command and request handler" />
     <MESSAGE value="Added Entry Controller" />
     <MESSAGE value="Modify EntryController.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify EntryController.cs" />
+    <MESSAGE value="Added pagination" />
+    <MESSAGE value="paignation modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="paignation modify" />
   </component>
 </project>

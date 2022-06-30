@@ -30,10 +30,7 @@ namespace Sozluk.Api.WebApi.Controllers
         [Route("create-entry")]
         public async Task<IActionResult> CreateEntry([FromBody] CreateEntryCommand entryCommand)
         {
-            if (!entryCommand.CreatedById.HasValue)
-            {
-                entryCommand.CreatedById = UserId;
-            }
+            entryCommand.CreatedById ??= UserId;
             var result = await _mediator.Send(entryCommand);
 
             return Ok(result);
@@ -42,10 +39,7 @@ namespace Sozluk.Api.WebApi.Controllers
         [Route("create-entry-comment")]
         public async Task<IActionResult> CreateEntryComment([FromBody] CreateEntryCommentCommand entryCommentCommand)
         {
-            if (!entryCommentCommand.CreatedById.HasValue)
-            {
-                entryCommentCommand.CreatedById = UserId;
-            }
+            entryCommentCommand.CreatedById ??= UserId;
             var result = await _mediator.Send(entryCommentCommand);
 
             return Ok(result);
