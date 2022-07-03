@@ -10,11 +10,23 @@
     <projectFile profileName="Sozluk.Projections.User">src/Projections/Sozluk.Projections.UserService/Sozluk.Projections.UserService.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" afterDir="false" />
+    <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="Added paging and page ınfo">
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Extensions/PagingExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/BasePagedQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterFavoritedViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterRateFavoritedViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterRateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/GetEntryDetailViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryVote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryVote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/BaseController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/Page.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/Page.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +77,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a4ed796081acfa4cefed1c41947519a48feaf6375183bfb6abe1618b88241/SqlServerDbContextOptionsBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a683b4d0bbcb4c3e98a3c7cffd352553a23690/_bc21e/IntrinsicAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af5e8f58e0cd43a56f652468b1080bbdbf4276e50cddad25571e6f22556715/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8383eafdb3fcfdc3625b4caef3730d5769bb177bac72360812c9f5bb4a78/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -236,6 +249,9 @@
       <workItem from="1656240954940" duration="9835000" />
       <workItem from="1656455729849" duration="3135000" />
       <workItem from="1656504503131" duration="3721000" />
+      <workItem from="1656619633639" duration="2284000" />
+      <workItem from="1656683543765" duration="674000" />
+      <workItem from="1656844381863" duration="3387000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -321,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656458886448</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added paging">
+      <created>1656619667101</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656619667101</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,6 +378,8 @@
     <MESSAGE value="Modify EntryController.cs" />
     <MESSAGE value="Added pagination" />
     <MESSAGE value="paignation modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="paignation modify" />
+    <MESSAGE value="Added paging" />
+    <MESSAGE value="Added paging and page ınfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added paging and page ınfo" />
   </component>
 </project>

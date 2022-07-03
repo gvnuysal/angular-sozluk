@@ -7,5 +7,5 @@ namespace Sozluk.Api.WebApi.Controllers;
 [ApiController]
 public class BaseController:ControllerBase
 {
-    public Guid UserId => new(HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+    public Guid? UserId =>Guid.NewGuid();// new(HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 }

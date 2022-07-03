@@ -27,7 +27,7 @@ public class GetEntriesQueryHandler : IRequestHandler<GetEntriesQuery, List<GetE
                 .Where(x => x.CreateDate <= DateTime.Now.AddDays(1).Date);
         }
 
-        query.Include(x => x.EntryComments).OrderBy(x=>Guid.NewGuid()).Take(request.Count);
-        return await query.ProjectTo<GetEntriesViewModel>(_mapper.ConfigurationProvider).ToListAsync(cancellationToken);
+        var queryable = query.Include(x => x.EntryComments).OrderBy(x=>Guid.NewGuid()).Take(request.Count);
+        return await queryable.ProjectTo<GetEntriesViewModel>(_mapper.ConfigurationProvider).ToListAsync(cancellationToken);
     }
 }
