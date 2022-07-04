@@ -10,23 +10,29 @@
     <projectFile profileName="Sozluk.Projections.User">src/Projections/Sozluk.Projections.UserService/Sozluk.Projections.UserService.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="Added paging and page ınfo">
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Extensions/PagingExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/BasePagedQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterFavoritedViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterRateFavoritedViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/BaseFooterRateViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/GetEntryDetailViewModel.cs" afterDir="false" />
+    <list default="true" id="f509dab7-9235-47e1-8fd8-e3380d3c339e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntryComments/GetEntryCommentQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntryComments/GetEntryCommentsQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntryDetail/GetEntryDetailQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntryDetail/GetEntryDetailQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetUserDetail/GetUserDetailQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetUserDetail/GetUserDetailQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetUserEntries/GetUserEntriesQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetUserEntries/GetUserEntriesQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/SearchBySubject/SearchEntryQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/GetEntryCommentsViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/GetUserEntriesDetailViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/SearchEntryQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/SearchEntryViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Queries/UserDetailViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sozluk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetEntries/GetEntriesQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryVote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Domain/Models/EntryVote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/GetMainPageEntries/GetMainPageEntriesQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/EntryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Sozluk.Common.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Extensions/PagingExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Infrastructure/Extensions/PagingExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/Page/PagedViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryVoteCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Sozluk.Common/Models/RequestModels/Entry/CreateEntryVoteCommand.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Clients/BlazzorWeb/Sozluk.WebApp/wwwroot/css/bootstrap/bootstrap.min.css.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18f9aab6fabc434588b218664646ce70200ba8/44/0941ae91/IEntityTypeConfiguration`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/511d4e206dae4ca0be58667fba28e4533de00/de/5a1f21fd/IMapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56cfd2c9d4f74e6eb72e1a8feca0594f2a00/f4/192f3915/AutoRegisterData.cs" root0="SKIP_HIGHLIGHTING" />
@@ -79,8 +86,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aaf01342eea43fe290632b786d8a29adb32df5a8ff30d03dbbe5aa62aaba4d1d/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/af5e8f58e0cd43a56f652468b1080bbdbf4276e50cddad25571e6f22556715/EntityFrameworkQueryableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b314525519f1b27e1c94253a577de2a24832a6aaaacfe82068889f9ae4f0cd/Faker[T].cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c69db81e42b6df6080f666ee103a95b51f3f4bbbbb6539fd6e8710a5dfd9/DbFunctionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cb2c5e2ed6a67a935eb97fb6b5c0c0d67ebbc39a8dd4ee293e1d3c5f595c4b18/EF.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8383eafdb3fcfdc3625b4caef3730d5769bb177bac72360812c9f5bb4a78/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/edc62739318e72f942526bdf2bb7f0c97ce489dec7ed5bea0397325fdf36d82/DbFunctions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -91,16 +101,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5895522&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.5135135",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sozluk.Api.WebApi">
     <configuration name="Sozluk.Api.WebApi" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Api/WebApi/Sozluk.Api.WebApi/Sozluk.Api.WebApi.csproj" />
@@ -251,7 +261,8 @@
       <workItem from="1656504503131" duration="3721000" />
       <workItem from="1656619633639" duration="2284000" />
       <workItem from="1656683543765" duration="674000" />
-      <workItem from="1656844381863" duration="3387000" />
+      <workItem from="1656844381863" duration="3985000" />
+      <workItem from="1656962837662" duration="6404000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1651134199923</created>
@@ -344,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656619667101</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added paging and page ınfo">
+      <created>1656847794299</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656847794299</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,5 +399,24 @@
     <MESSAGE value="Added paging" />
     <MESSAGE value="Added paging and page ınfo" />
     <option name="LAST_COMMIT_MESSAGE" value="Added paging and page ınfo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Api/Core/Sozluk.Api.Application/Features/Queries/SearchBySubject/SearchEntryQueryHandler.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Projects\angular\angular-sozluk\src\Api\Core\Sozluk.Api.Application\Features\Queries\SearchBySubject\SearchEntryQueryHandler.cs" initialLine="17" containingFunctionPresentation="method 'Handle'">
+            <startOffsets>
+              <option value="625" />
+            </startOffsets>
+            <endOffsets>
+              <option value="626" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -6,6 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sozluk.Api.Application.Features.Command.User.ConfirmEmail;
+using Sozluk.Api.Application.Features.Queries.GetUserDetail;
 using Sozluk.Common.Events.User;
 using Sozluk.Common.ViewModels.RequestModels;
 
@@ -60,6 +61,22 @@ namespace Sozluk.Api.WebApi.Controllers
             }
             var ok = await _mediator.Send(changeUserPasswordCommand);
             return Ok(ok);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var user = await _mediator.Send(new GetUserDetailQuery(id));
+            return Ok(user);
+        }
+
+        [HttpGet]
+        [Route("username/{username}")]
+        public async Task<IActionResult> GetByUserName(string userName)
+        {
+            var user = await _mediator.Send(new GetUserDetailQuery(Guid.Empty, userName));
+            return Ok(user);
         }
     }
 }
